@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(108, 108, 203);
+}
+
+.site-title {
+  margin-left: 30px;
+}

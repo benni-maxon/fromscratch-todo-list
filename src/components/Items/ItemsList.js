@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { ItemsContext } from '../../context/ItemsContext.js';
-import { toggleListItem } from '../../services/items.js';
+import { deleteListItem, toggleListItem } from '../../services/items.js';
+import './Items.css';
 
 export default function ItemsList() {
   const { items, setItems } = useContext(ItemsContext);
@@ -18,15 +19,18 @@ export default function ItemsList() {
     <>
       {items.map((item) => (
         <div key={item.id}>
-          <label className="checkbox">
+          <div className="list-item">
+            {/* <button onClick={() => deleteListItem(item.id)}>❌</button> */}
             <input
               className="tick"
               type="checkbox"
               checked={item.complete}
               onChange={() => handleChange(item)}
             />
-            {item.description}
-          </label>
+            <p className="item-description" onClick={() => deleteListItem(item.id)}>
+              {item.description}
+            </p>
+          </div>
         </div>
       ))}
     </>

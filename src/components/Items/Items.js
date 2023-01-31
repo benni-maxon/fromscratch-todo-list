@@ -12,7 +12,6 @@ export default function Items() {
   return (
     <div className="container">
       <div>
-        <h2>To-Do List</h2>
         <ItemForm />
         <ItemsList />
       </div>

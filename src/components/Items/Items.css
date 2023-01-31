@@ -1,0 +1,15 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-description {
+  font-size: 2em;
+}
+
+.item-description:hover {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  cursor: pointer;
+}

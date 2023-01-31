@@ -15,7 +15,7 @@ const ItemsProvider = ({ children }) => {
       }
     };
     fetchItems();
-  }, []);
+  }, [items]);
   return <ItemsContext.Provider value={{ items, setItems }}>{children}</ItemsContext.Provider>;
 };
 
