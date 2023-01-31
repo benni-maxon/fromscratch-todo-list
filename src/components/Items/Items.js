@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { useUser } from '../../context/UserContext.js';
+import ItemForm from './ItemForm.js';
 import ItemsList from './ItemsList.js';
 
 export default function Items() {
@@ -13,6 +14,7 @@ export default function Items() {
       <div>
         <h2>To-Do List</h2>
         <ItemsList />
+        <ItemForm />
       </div>
     </div>
   );
