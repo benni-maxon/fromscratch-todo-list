@@ -20,7 +20,6 @@ export default function ItemsList() {
       {items.map((item) => (
         <div key={item.id}>
           <div className="list-item">
-            {/* <button onClick={() => deleteListItem(item.id)}>❌</button> */}
             <input
               className="tick"
               type="checkbox"
