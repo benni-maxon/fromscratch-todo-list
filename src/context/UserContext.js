@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import { getUser } from '../services/auth.js';
 
 const userContext = createContext();
@@ -11,7 +11,7 @@ const UserProvider = ({ children }) => {
 };
 
 const useUser = () => {
-  const data = userContext(userContext);
+  const data = useContext(userContext);
 
   if (!data) {
     throw new Error('useUser must be wrapped in a UserProvider');
