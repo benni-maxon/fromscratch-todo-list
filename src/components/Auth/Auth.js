@@ -30,7 +30,7 @@ export default function Auth() {
             Sign In
           </NavLink>
           <NavLink to="/auth/sign-up" activeClassName="is-active">
-            Sign Un
+            Sign Up
           </NavLink>
         </div>
         <div className="panel-block">
@@ -50,7 +50,7 @@ export default function Auth() {
             <div>
               <input
                 type="password"
-                placeholder="********"
+                placeholder="******"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
