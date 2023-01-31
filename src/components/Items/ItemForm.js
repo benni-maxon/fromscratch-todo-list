@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { ItemsContext } from '../../context/ItemsContext.js';
 import { createListItem } from '../../services/items.js';
 

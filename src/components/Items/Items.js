@@ -13,8 +13,8 @@ export default function Items() {
     <div className="container">
       <div>
         <h2>To-Do List</h2>
-        <ItemsList />
         <ItemForm />
+        <ItemsList />
       </div>
     </div>
   );
