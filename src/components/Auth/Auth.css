@@ -1,0 +1,45 @@
+.auth-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
+}
+
+.auth-panel {
+  border: solid 5px black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(146, 146, 146);
+}
+
+.auth-panel div {
+  font-size: 1.2em;
+  padding: 2px;
+}
+
+.panel-heading {
+  margin-bottom: 10px;
+}
+.panel-tabs {
+  margin: 5px;
+}
+.auth-link {
+  margin: 4px;
+  color: black;
+  border: solid 2px black;
+  border-radius: 15px;
+  padding: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(130, 130, 130);
+}
+
+.input-div {
+  justify-content: center;
+  align-content: center;
+}
+
+.is-active {
+  background-color: rgb(108, 108, 203);
+}

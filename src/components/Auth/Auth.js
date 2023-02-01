@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Redirect, useParams } from 'react-router-dom';
 import { useUser } from '../../context/UserContext.js';
 import { authUser } from '../../services/auth.js';
+import './Auth.css';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
@@ -22,21 +23,21 @@ export default function Auth() {
   };
 
   return (
-    <div className="auth box">
-      <nav>
+    <div className="auth-box">
+      <div className="auth-panel">
         <div className="panel-heading">Welcome to your favorite to-do list!</div>
         <div className="panel-tabs">
-          <NavLink to="/auth/sign-in" activeClassName="is-active">
+          <NavLink to="/auth/sign-in" className="auth-link" activeClassName="is-active">
             Sign In
           </NavLink>
-          <NavLink to="/auth/sign-up" activeClassName="is-active">
+          <NavLink to="/auth/sign-up" className="auth-link" activeClassName="is-active">
             Sign Up
           </NavLink>
         </div>
         <div className="panel-block">
           <div className="field">
             <label>Email</label>
-            <div>
+            <div className="input-div">
               <input
                 type="email"
                 placeholder="person@email.com"
@@ -47,7 +48,7 @@ export default function Auth() {
           </div>
           <div className="field">
             <label>Password</label>
-            <div>
+            <div className="input-div">
               <input
                 type="password"
                 placeholder="******"
@@ -60,7 +61,7 @@ export default function Auth() {
         <div>
           <button onClick={submitAuth}>Submit</button>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }

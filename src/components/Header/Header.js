@@ -22,8 +22,12 @@ export default function Header() {
       <div className="links">
         {!user && (
           <div className="sign-in-up-links">
-            <Link to="/auth/sign-up">Sign Up</Link>
-            <Link to="/auth/sign-in">Sign In</Link>
+            <Link className="link" to="/auth/sign-in">
+              Sign In
+            </Link>
+            <Link className="link" to="/auth/sign-up">
+              Sign Up
+            </Link>
           </div>
         )}
         {user && (
