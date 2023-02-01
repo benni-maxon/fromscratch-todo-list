@@ -59,7 +59,9 @@ export default function Auth() {
           </div>
         </div>
         <div>
-          <button onClick={submitAuth}>Submit</button>
+          <button className="submit-button" onClick={submitAuth}>
+            Submit
+          </button>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { ItemsContext } from '../../context/ItemsContext.js';
 import { createListItem } from '../../services/items.js';
+import './Items.css';
 
 export default function ItemForm() {
   const [description, setDescription] = useState('');

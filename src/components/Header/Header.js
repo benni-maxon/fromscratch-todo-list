@@ -31,10 +31,12 @@ export default function Header() {
           </div>
         )}
         {user && (
-          <>
-            <h2>hello {user.email}</h2>
-            <button onClick={handleLogout}>Sign Out</button>
-          </>
+          <div className="signed-in">
+            <h2 className="greeting">hello {user.email}</h2>
+            <button className="sign-out-button" onClick={handleLogout}>
+              Sign Out
+            </button>
+          </div>
         )}
       </div>
     </nav>

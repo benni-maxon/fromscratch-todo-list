@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { useUser } from '../../context/UserContext.js';
 import ItemForm from './ItemForm.js';
 import ItemsList from './ItemsList.js';
+import './Items.css';
 
 export default function Items() {
   const { user } = useUser();
@@ -11,7 +12,7 @@ export default function Items() {
   }
   return (
     <div className="container">
-      <div>
+      <div className="items-box">
         <ItemForm />
         <ItemsList />
       </div>

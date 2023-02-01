@@ -35,11 +35,35 @@
   background-color: rgb(130, 130, 130);
 }
 
+.auth-link:hover {
+  background-color: rgba(130, 130, 130, 0.3);
+}
+
+.is-active {
+  background-color: rgb(108, 108, 203);
+}
+
+.is-active:hover {
+  background-color: rgba(108, 108, 203, 0.7);
+}
+
 .input-div {
   justify-content: center;
   align-content: center;
 }
 
-.is-active {
-  background-color: rgb(108, 108, 203);
+.submit-button {
+  padding: 5px;
+  margin: 5px;
+  border: solid black 4px;
+  border-radius: 15px;
+  background-color: rgb(69, 69, 69);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgba(69, 69, 69, 0.69);
 }
