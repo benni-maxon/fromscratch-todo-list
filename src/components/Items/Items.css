@@ -1,0 +1,59 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.item-description {
+  font-size: 2em;
+  margin: 3px;
+}
+
+.item-description:hover {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  cursor: pointer;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
+}
+
+.items-box {
+  border: solid 4px black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(146, 146, 146);
+  min-height: 550px;
+}
+
+.add-button {
+  padding: 5px;
+  margin: 5px;
+  border: solid black 2px;
+  border-radius: 15px;
+  background-color: rgb(69, 69, 69);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: rgba(69, 69, 69, 0.69);
+}
+
+.item-input {
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.item-input:focus {
+  outline: 3px rgb(108, 108, 203) solid;
+}
