@@ -47,3 +47,13 @@
   cursor: pointer;
   background-color: rgba(69, 69, 69, 0.69);
 }
+
+.item-input {
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.item-input:focus {
+  outline: 3px rgb(108, 108, 203) solid;
+}

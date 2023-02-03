@@ -18,6 +18,7 @@ export default function ItemForm() {
   return (
     <div className="field">
       <input
+        className="item-input"
         type="text"
         placeholder="new to-do list item"
         value={description}
