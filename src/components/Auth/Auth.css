@@ -7,7 +7,7 @@
 }
 
 .auth-panel {
-  border: solid 5px black;
+  border: solid 4px black;
   border-radius: 15px;
   padding: 10px;
   background-color: rgb(146, 146, 146);
@@ -55,7 +55,7 @@
 .submit-button {
   padding: 5px;
   margin: 5px;
-  border: solid black 4px;
+  border: solid black 2px;
   border-radius: 15px;
   background-color: rgb(69, 69, 69);
   color: white;
@@ -66,4 +66,14 @@
 .submit-button:hover {
   cursor: pointer;
   background-color: rgba(69, 69, 69, 0.69);
+}
+
+.auth-input {
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.auth-input:focus {
+  outline: 3px rgb(108, 108, 203) solid;
 }

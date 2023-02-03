@@ -23,7 +23,9 @@ export default function ItemForm() {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button onClick={handleNewItem}>Add</button>
+      <button className="add-button" onClick={handleNewItem}>
+        Add
+      </button>
     </div>
   );
 }

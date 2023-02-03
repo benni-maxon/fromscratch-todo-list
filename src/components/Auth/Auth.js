@@ -39,6 +39,7 @@ export default function Auth() {
             <label>Email</label>
             <div className="input-div">
               <input
+                className="auth-input"
                 type="email"
                 placeholder="person@email.com"
                 value={email}
@@ -50,6 +51,7 @@ export default function Auth() {
             <label>Password</label>
             <div className="input-div">
               <input
+                className="auth-input"
                 type="password"
                 placeholder="******"
                 value={password}
